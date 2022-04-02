@@ -4,6 +4,7 @@ const hre = require("hardhat");
 
 async function main() {
   const KeeperMinter = await hre.ethers.getContractFactory("KeeperMinter");
+
   const keeperMinter = await KeeperMinter.deploy(20);
   await keeperMinter.deployed();
   console.log("KeeperMinter deployed to:", keeperMinter.address);
