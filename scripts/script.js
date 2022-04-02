@@ -7,6 +7,7 @@ async function main() {
   const keeperMinter = await KeeperMinter.deploy(20);
   await keeperMinter.deployed();
   console.log("KeeperMinter deployed to:", keeperMinter.address);
+  console.log(`current network :${network.config.chainId}`);
 }
 
 main()

@@ -28,7 +28,7 @@ module.exports = {
     },
     kovan: {
       accounts: [process.env.account],
-      networks: process.env.kovan,
+      url: process.env.kovan,
       chainId: 42,
     },
   },
